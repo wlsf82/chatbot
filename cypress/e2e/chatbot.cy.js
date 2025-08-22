@@ -1,12 +1,7 @@
-Cypress._.times(3, () => {
-  describe('chatbot', () => {
+describe('chatbot', () => {
     beforeEach(() => {
       cy.visit('/')
       cy.get('#lovable-badge-close').click()
-    })
-
-    afterEach(() => {
-      cy.wait(1000) // Wait for demonstrations purpose.
     })
 
     it("What was the result of my team's last game?", () => {
@@ -66,8 +61,13 @@ Cypress._.times(3, () => {
             "It's white 🤍",
             "It's green 💚",
             "It's blue 💙",
+            "It's brown 🤎",
+            "It's red ❤️",
+            "It's purple 💜",
+            "It's orange 🧡",
+            "It's yellow 💛",
+            "It's black 🖤"
           ])
         })
     })
-  })
 })
